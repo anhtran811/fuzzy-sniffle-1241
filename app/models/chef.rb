@@ -3,4 +3,8 @@ class Chef < ApplicationRecord
   has_many :dishes
   has_many :ingredients, through: :dishes, dependent: :destroy
 
+
+  def unique_ingredients_used
+    self.ingredients.distinct.pluck(:name)
+  end
 end

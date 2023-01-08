@@ -9,3 +9,7 @@
   <%= form.number_field :dish_identification %>
   <%= form.submit 'Add dish' %>
 <% end %>
+
+<div id='all_ingredients_<%= @chef.id %>'>
+  <%= link_to 'All ingredients', "/chefs/#{@chef.id}/ingredients" %>
+</div>
