@@ -12,10 +12,12 @@ Ingredient.destroy_all
 DishIngredient.destroy_all
 
 tom = Chef.create!(name: 'Tom') 
+laura = Chef.create!(name: 'Laura') 
 
 spaghetti = tom.dishes.create!(name: 'spaghetti and meatballs', description: 'pork meatballs with red sauce')
 lasagna = tom.dishes.create!(name: 'lasagna with meat sauce', description: 'can be made with vegetarian')
 ziti = tom.dishes.create!(name: 'baked ziti', description: '5 different cheeses double baked')
+alfredo = laura.dishes.create!(name: 'alfredo', description: '5 different cheeses double baked')
 
 sauce = Ingredient.create!(name: 'sauce', calories: 10)
 pasta = Ingredient.create!(name: 'pasta', calories: 400)
