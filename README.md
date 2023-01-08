@@ -41,7 +41,7 @@ Once the time for the assessment is up, push your code to your fork and create a
 * You do not need to test for or create any model validations.
 
 ## Overview
-Order Up is an app that tracks chefs, the dishes that they make, and the ingredients that are in those dishes. Chefs have many dishes. Dishes belong to a chef. Dishes have many Ingredients and Ingredients have many dishes. Ingredients should have a name and calories.
+Order Up is an app that tracks chefs, the dishes that they make, and the ingredients that are in those dishes. Chefs have many dishes. Dishes belong to a chef. Dishes have many Ingredients ander Ingredients have many dishes. Ingredients should have a name and calories.
  
 Two migrations have been made for you. The one to many relationship has been set up. You will need to create migrations for the many to many relationship between ingredients and dishes. You do not need to do model testing for validations, just make sure you test any relationships and model methods that you create.
  
